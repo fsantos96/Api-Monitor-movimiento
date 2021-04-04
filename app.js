@@ -13,7 +13,7 @@ router.get('/', function(req, res) {
   res.send("Hello world!");
 });
 
-routes = require('./routes/tvshows')(router);
+routes = require('./routes/routes')(router);
 
 server.listen(3000, function() {
   console.log("Node server running on http://localhost:3000");
